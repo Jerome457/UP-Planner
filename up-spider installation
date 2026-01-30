@@ -1,0 +1,24 @@
+https://pypi.org/project/up-spiderplan/0.3.4/#description
+Follow the above link for installing spiderplan
+
+For some reason after first installing 0.3.4 for spiderplan and then upgrading to 0.6.4 the import errors where resolved.
+
+from up_spiderplan.solver import EngineImpl
+
+from up_spiderplan.util import plot_path
+
+update to this is test.py in test directory since we areusing python 3.10
+
+
+
+pip uninstall docker docker-compose requests urllib3 -y
+
+sudo apt update
+sudo apt install --reinstall docker-compose python3-docker python3-requests python3-urllib3
+These packages should be there to prevent docker and python mismatch
+
+
+For doing it again:
+docker network prune -f
+docker rm up-spiderplan-server-web
+Since running the code runs docker compose again you need to delete the previousle made container to run it again
