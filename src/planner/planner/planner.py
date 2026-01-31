@@ -190,57 +190,29 @@ class PickPlacePlanner(Node):
         if result.status in results.POSITIVE_OUTCOMES:
             self.get_logger().info("PLAN FOUND")
 
-            plan_json = self.plan_to_json(result.plan)
+            plan_text = self.plan_to_spiderplan_text(result.plan)
 
             msg = String()
-            msg.data = plan_json
+            msg.data = plan_text
             self.plan_pub.publish(msg)
 
             self.get_logger().info("Plan published on /planned_actions")
+            print(plan_text)
 
-            print(plan_json)
             plot_path(result)
-
         else:
             self.get_logger().error("NO PLAN FOUND")
             print(result.status)
-    def plan_to_json(self, plan):
-        output = []
+
+    def plan_to_spiderplan_text(self, plan):
+        lines = []
 
         for a in plan.actions:
-            name = a.action.name
+            # This matches SpiderPlan console output
+            lines.append(str(a))
 
-            # Zip formal parameters with actual values
-            params = {
-                p.name: str(v)
-                for p, v in zip(a.action.parameters, a.actual_parameters)
-            }
+        return "\n".join(lines)
 
-            if name == "move":
-                output.append({
-                    "action": "move",
-                    "robot": params["robot"],
-                    "from": params["c_from"],
-                    "to": params["c_to"]
-                })
-
-            elif name == "pick":
-                output.append({
-                    "action": "pick",
-                    "robot": params["robot"],
-                    "object": params["obj"],
-                    "ws": params["ws"]
-                })
-
-            elif name == "place":
-                output.append({
-                    "action": "place",
-                    "robot": params["robot"],
-                    "object": params["obj"],
-                    "ws": params["ws"]
-                })
-
-        return json.dumps(output, indent=2)
 
 
 
