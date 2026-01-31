@@ -7,7 +7,7 @@ from up_spiderplan.solver import EngineImpl
 
 from up_spiderplan.util import plot_path
 
-update to this is test.py in test directory since we areusing python 3.10
+update to this in test.py in test directory since we are using python 3.10
 
 
 

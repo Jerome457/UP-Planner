@@ -1,0 +1,24 @@
+[0.465s] Invoking command in '/home/jerome/planner/src/planner': PYTHONPATH=/home/jerome/planner/build/planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jerome/planner/install/planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/planner build --build-base /home/jerome/planner/build/planner/build install --record /home/jerome/planner/build/planner/install.log --single-version-externally-managed install_data
+[0.644s] running egg_info
+[0.644s] writing ../../build/planner/planner.egg-info/PKG-INFO
+[0.644s] writing dependency_links to ../../build/planner/planner.egg-info/dependency_links.txt
+[0.644s] writing entry points to ../../build/planner/planner.egg-info/entry_points.txt
+[0.644s] writing requirements to ../../build/planner/planner.egg-info/requires.txt
+[0.644s] writing top-level names to ../../build/planner/planner.egg-info/top_level.txt
+[0.645s] reading manifest file '../../build/planner/planner.egg-info/SOURCES.txt'
+[0.646s] writing manifest file '../../build/planner/planner.egg-info/SOURCES.txt'
+[0.646s] running build
+[0.646s] running build_py
+[0.646s] copying planner/planner.py -> /home/jerome/planner/build/planner/build/lib/planner
+[0.646s] running install
+[0.646s] running install_lib
+[0.647s] copying /home/jerome/planner/build/planner/build/lib/planner/planner.py -> /home/jerome/planner/install/planner/lib/python3.10/site-packages/planner
+[0.647s] byte-compiling /home/jerome/planner/install/planner/lib/python3.10/site-packages/planner/planner.py to planner.cpython-310.pyc
+[0.648s] running install_data
+[0.648s] running install_egg_info
+[0.649s] removing '/home/jerome/planner/install/planner/lib/python3.10/site-packages/planner-0.0.0-py3.10.egg-info' (and everything under it)
+[0.649s] Copying ../../build/planner/planner.egg-info to /home/jerome/planner/install/planner/lib/python3.10/site-packages/planner-0.0.0-py3.10.egg-info
+[0.650s] running install_scripts
+[0.663s] Installing planner_node script to /home/jerome/planner/install/planner/lib/planner
+[0.664s] writing list of installed files to '/home/jerome/planner/build/planner/install.log'
+[0.678s] Invoked command in '/home/jerome/planner/src/planner' returned '0': PYTHONPATH=/home/jerome/planner/build/planner/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jerome/planner/install/planner/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/planner build --build-base /home/jerome/planner/build/planner/build install --record /home/jerome/planner/build/planner/install.log --single-version-externally-managed install_data

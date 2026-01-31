@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/planner/planner.egg-info/PKG-INFO
+writing dependency_links to ../../build/planner/planner.egg-info/dependency_links.txt
+writing entry points to ../../build/planner/planner.egg-info/entry_points.txt
+writing requirements to ../../build/planner/planner.egg-info/requires.txt
+writing top-level names to ../../build/planner/planner.egg-info/top_level.txt
+reading manifest file '../../build/planner/planner.egg-info/SOURCES.txt'
+writing manifest file '../../build/planner/planner.egg-info/SOURCES.txt'
+running build
+running build_py
+copying planner/planner.py -> /home/jerome/planner/build/planner/build/lib/planner
+running install
+running install_lib
+copying /home/jerome/planner/build/planner/build/lib/planner/planner.py -> /home/jerome/planner/install/planner/lib/python3.10/site-packages/planner
+byte-compiling /home/jerome/planner/install/planner/lib/python3.10/site-packages/planner/planner.py to planner.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/jerome/planner/install/planner/lib/python3.10/site-packages/planner-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/planner/planner.egg-info to /home/jerome/planner/install/planner/lib/python3.10/site-packages/planner-0.0.0-py3.10.egg-info
+running install_scripts
+Installing planner_node script to /home/jerome/planner/install/planner/lib/planner
+writing list of installed files to '/home/jerome/planner/build/planner/install.log'
