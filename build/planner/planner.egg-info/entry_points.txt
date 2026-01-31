@@ -1,3 +1,0 @@
-[console_scripts]
-planner_node = planner.planner:main
-
